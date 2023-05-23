@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(cors())
-const productroutes = require('./routes/productroute')
-app.use('/products',productroutes )
+const commentRoutes = require('./routes/commentroute')
+app.use('/comment',commentRoutes)
 
 
 
