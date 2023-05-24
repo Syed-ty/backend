@@ -22,8 +22,8 @@ app.listen(3000, ()=>{
 
 
 const mongoose = require('mongoose')
-
-mongoose.connect('mongodb://localhost:27017/',{
+let mongoUrl = 'mongodb+srv://syedmohammedhassan96:AixO9QjUO3QWnRpH@cluster0.6mtnwok.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+mongoose.connect(mongoUrl,{
          useNewUrlParser :true,
          useUnifiedTopology :true
 })
