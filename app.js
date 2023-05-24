@@ -12,9 +12,21 @@ app.use(cors())
 const commentRoutes = require('./routes/commentroute')
 app.use('/comment',commentRoutes)
 
+app.get('/', (req, res) => {
+    res.json({
+        app: 'Commentapplication',
+        path: '/',
+        response: "ok"
+    });
+});
 
-
-
+app.use((err, req, res, next) => {
+    res.status(500).json({
+        error: true,
+        message: "Internal Server Error",
+        details: err
+    })
+});
 
 app.listen(3000, ()=>{
     console.log('App is running on port on 3000')
