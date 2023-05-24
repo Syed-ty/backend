@@ -1,4 +1,4 @@
-# Comment System Web Application - Backend (Nodejs with postgreSQL)
+# Comment System Web Application - Backend (Nodejs with MongoDB)
 
 Install the necessary dependency by using this command ---   npm install 
 
